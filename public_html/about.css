@@ -6,7 +6,7 @@
 
 body {
     height: 100vh;
-    background-color: navy;
+    background: linear-gradient(to bottom right, #800000, #3b0a45);
 }
 
 h1, p, ul, li {
@@ -15,13 +15,20 @@ h1, p, ul, li {
     color: white;
 }
 
+a {
+    text-decoration: underline;
+    color: white;
+}
+
 .navbar {
-    background-color: rgb(32, 32, 34);
+    background-color: whitesmoke;
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: auto;
-    width: 100%
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
 }
 
 .navbar-div {
@@ -41,12 +48,87 @@ h1, p, ul, li {
 }
 
 .links a{
-    display: flex;
-    align-items: center;
+    display: inline-block;
+    font-size: 16px;
     text-decoration: none;
-    color:white
+    color: #800000;
+    transition: all 0.8s ease;
 }
 
 .navbar-links a:hover {
-    text-decoration: underline;
+    border-radius: 5px;
+    box-shadow: 0 8px 16px rgba(128, 0, 0, 0.6); /* Maroon shadow */
+    transform: translateY(-5px);
+}
+
+.about-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    padding-top: 5%;
+    padding-bottom: 1%;
+    font-size: 10vh;
+}
+
+.upper-half {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.about-text-container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    padding: 20px;
+}
+
+.about-text {
+    text-indent: 2em;
+    font-size: 2.5vh;
+    padding: 2%;
+}
+
+.line {
+    width: 2px;
+    background-color: white; 
+    height: 30vh;
+    margin-right: 20px;
+}
+
+.pfp-container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pfp {
+    height: 40vh;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.lower-half {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.pdf-icon {
+    padding: 25%;
+    height: 25vh;
+}
+
+.resume-text-container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
 }

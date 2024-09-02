@@ -8,17 +8,54 @@
 
   <body>
     <nav class="navbar">
-        <div class="navbar-div">
-          <ul class="navbar-links">
-            <li class="links"><a href="index.html">Home</a></li>
-            <li class="links"><a href="about.html">About Me</a></li>
-            <li class="links"><a href="portfolio.html">Portfolio</a></li>
-            <li class="links"><a href="services.html">Services</a></li>
-            <li class="links"><a href="contact.html">Contact Me</a></li>
-          </ul>
+      <div class="navbar-div">
+        <ul class="navbar-links">
+          <li class="links"><a href="index.html">Home</a></li>
+          <li class="links"><a href="about.html">About Me</a></li>
+          <li class="links"><a href="portfolio.html">Portfolio</a></li>
+          <li class="links"><a href="services.html">Services</a></li>
+          <li class="links"><a href="contact.html">Contact Me</a></li>
+          <li class="links"><a href="ai.html">ChatGPT Page</a></li>
+        </ul>
+      </div>
+    </nav>
+      <h1 class="portfolio-header">Technical Portfolio</h1>
+      <div class="upper-half">
+        <div class="logo-containers">
+          <div class="individual-logo">
+            <img src="./assests/gtihub-school.svg">
+            <a href="https://github.com/theejoshuajg?tab=repositories" target="_blank">
+              <div class="hover-text"><strong>School Github Account Link</strong></div>
+            </a>
+          </div>
+          <div class="individual-logo">
+            <img src="./assests/GitHub-Logo (1).png">
+            <a href="https://github.com/joshuajgeorge?tab=repositories" target="_blank">
+              <div class="hover-text"><strong>Personal Github Account Link</strong></div>
+            </a>
+          </div>
         </div>
-      </nav>
-    <h1>Hello</h1>
-    <p>Welcome to the about me page</p>
+        <div class="github-text-container">
+          <div class="line"></div>
+          <p class="github-text">Some of the projects and practices I have done have been uploaded to my two github accounts which are linked to the left. These accounts do not contain every single project I have down; however, they do include some of the more influential and importation projects. Outside of these projects I have also gotten the chance to work as a software engineer at two different companies, R1649 and Cpagemini/Sogeti. As my software development journey continues, I hope to be able to add many more projects and gained various new experiences.</p>
+        </div>
+      </div>
+      <div class="lower-half">
+        <div class="project-text-container">
+          <p id="active-description">One of the first solo projects I did was the summary generator website. This project was a simple website that utilized the chatgpt API in order to generate a 300 word summary of whatever book you asked it. This project also had a log in feature to allow users to save their summaries across devices. For this project I used HTML, CSS, Javascript, and python. Python was used for database and for the API calls, while the other languages were used for the website itself.</p>
+          <div class="line"></div>
+        </div>
+        <div class="slider-content">
+          <p class="caption"><strong>Company/Project is linked</strong></p>
+          <div class="image-slider">
+            <button id="back"><span class="arrow">&#x2190;</span></button>
+            <a href="https://github.com/joshuajgeorge/summary-generator" id="project-link" target="_blank">
+              <img id="active-image" src="./assests/summary-generator.png">
+            </a>
+            <button id="next"><span class="arrow">&#x2192;</span></button>
+          </div>
+        </div>
+      </div>
+      <script src="portfolio_slider.js"></script>
   </body>
 </html>
